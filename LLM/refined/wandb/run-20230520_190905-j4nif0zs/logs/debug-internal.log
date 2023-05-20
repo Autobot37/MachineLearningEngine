@@ -1,0 +1,363 @@
+2023-05-20 19:09:05,855 INFO    StreamThr :10880 [internal.py:wandb_internal():86] W&B internal server running at pid: 10880, started at: 2023-05-20 19:09:05.855416
+2023-05-20 19:09:05,855 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: status
+2023-05-20 19:09:05,915 INFO    WriterThread:10880 [datastore.py:open_for_write():85] open: C:\Users\SHIVA SINGH\OneDrive\Documents\LLM\refined\wandb\run-20230520_190905-j4nif0zs\run-j4nif0zs.wandb
+2023-05-20 19:09:05,915 DEBUG   SenderThread:10880 [sender.py:send():375] send: header
+2023-05-20 19:09:06,065 DEBUG   SenderThread:10880 [sender.py:send():375] send: run
+2023-05-20 19:09:07,255 INFO    SenderThread:10880 [dir_watcher.py:__init__():219] watching files in: C:\Users\SHIVA SINGH\OneDrive\Documents\LLM\refined\wandb\run-20230520_190905-j4nif0zs\files
+2023-05-20 19:09:07,255 INFO    SenderThread:10880 [sender.py:_start_run_threads():1124] run started: j4nif0zs with start time 1684589945.867017
+2023-05-20 19:09:07,255 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:07,255 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:07,265 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: check_version
+2023-05-20 19:09:07,265 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: check_version
+2023-05-20 19:09:07,525 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: run_start
+2023-05-20 19:09:07,565 DEBUG   HandlerThread:10880 [system_info.py:__init__():31] System info init
+2023-05-20 19:09:07,565 DEBUG   HandlerThread:10880 [system_info.py:__init__():46] System info init done
+2023-05-20 19:09:07,565 INFO    HandlerThread:10880 [system_monitor.py:start():181] Starting system monitor
+2023-05-20 19:09:07,565 INFO    SystemMonitor:10880 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-05-20 19:09:07,565 INFO    HandlerThread:10880 [system_monitor.py:probe():201] Collecting system info
+2023-05-20 19:09:07,565 INFO    SystemMonitor:10880 [interfaces.py:start():190] Started cpu monitoring
+2023-05-20 19:09:07,565 INFO    SystemMonitor:10880 [interfaces.py:start():190] Started disk monitoring
+2023-05-20 19:09:07,573 INFO    SystemMonitor:10880 [interfaces.py:start():190] Started gpu monitoring
+2023-05-20 19:09:07,575 INFO    SystemMonitor:10880 [interfaces.py:start():190] Started memory monitoring
+2023-05-20 19:09:07,589 INFO    SystemMonitor:10880 [interfaces.py:start():190] Started network monitoring
+2023-05-20 19:09:07,600 DEBUG   HandlerThread:10880 [system_info.py:probe():195] Probing system
+2023-05-20 19:09:07,600 ERROR   gpu       :10880 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-20 19:09:07,600 ERROR   gpu       :10880 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-20 19:09:07,600 DEBUG   HandlerThread:10880 [system_info.py:_probe_git():180] Probing git
+2023-05-20 19:09:07,885 DEBUG   HandlerThread:10880 [system_info.py:_probe_git():188] Probing git done
+2023-05-20 19:09:07,885 DEBUG   HandlerThread:10880 [system_info.py:probe():240] Probing system done
+2023-05-20 19:09:07,885 DEBUG   HandlerThread:10880 [system_monitor.py:probe():210] {'os': 'Windows-10-10.0.22621-SP0', 'python': '3.10.0', 'heartbeatAt': '2023-05-20T13:39:07.600421', 'startedAt': '2023-05-20T13:39:05.825383', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'C:\\Users\\SHIVA SINGH\\OneDrive\\Documents\\LLM\\refined\\atrain.py', 'codePath': 'OneDrive\\Documents\\LLM\\refined\\atrain.py', 'git': {'remote': None, 'commit': '16d6bfbe67ae2f45506e8cdfff80f3430bc414e3'}, 'email': '93463931+Autobot37@users.noreply.github.com', 'root': 'C:/Users/SHIVA SINGH', 'host': 'SS-Panzer', 'username': 'SHIVA SINGH', 'executable': 'C:\\Users\\SHIVA SINGH\\AppData\\Local\\Programs\\Python\\Python310\\python.exe', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 2419.0, 'min': 0.0, 'max': 2419.0}, 'cpu_freq_per_core': [{'current': 2419.0, 'min': 0.0, 'max': 2419.0}], 'disk': {'total': 185.18261337280273, 'used': 168.40613174438477}, 'gpu': 'NVIDIA GeForce MX350', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce MX350', 'memory_total': 2147483648}], 'memory': {'total': 7.741001129150391}}
+2023-05-20 19:09:07,885 INFO    HandlerThread:10880 [system_monitor.py:probe():211] Finished collecting system info
+2023-05-20 19:09:07,885 INFO    HandlerThread:10880 [system_monitor.py:probe():214] Publishing system info
+2023-05-20 19:09:07,885 DEBUG   HandlerThread:10880 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-05-20 19:09:07,885 DEBUG   HandlerThread:10880 [system_info.py:_save_pip():67] Saving pip packages done
+2023-05-20 19:09:07,892 INFO    HandlerThread:10880 [system_monitor.py:probe():216] Finished publishing system info
+2023-05-20 19:09:07,905 DEBUG   SenderThread:10880 [sender.py:send():375] send: files
+2023-05-20 19:09:07,905 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-05-20 19:09:07,915 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-20 19:09:07,915 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: stop_status
+2023-05-20 19:09:08,275 INFO    Thread-16 :10880 [dir_watcher.py:_on_file_created():278] file/dir created: C:\Users\SHIVA SINGH\OneDrive\Documents\LLM\refined\wandb\run-20230520_190905-j4nif0zs\files\requirements.txt
+2023-05-20 19:09:08,275 INFO    Thread-16 :10880 [dir_watcher.py:_on_file_created():278] file/dir created: C:\Users\SHIVA SINGH\OneDrive\Documents\LLM\refined\wandb\run-20230520_190905-j4nif0zs\files\wandb-summary.json
+2023-05-20 19:09:08,275 INFO    Thread-16 :10880 [dir_watcher.py:_on_file_created():278] file/dir created: C:\Users\SHIVA SINGH\OneDrive\Documents\LLM\refined\wandb\run-20230520_190905-j4nif0zs\files\wandb-metadata.json
+2023-05-20 19:09:08,517 DEBUG   SenderThread:10880 [sender.py:send():375] send: telemetry
+2023-05-20 19:09:08,984 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:08,988 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:08,988 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:08,988 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:09,289 INFO    Thread-16 :10880 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\SHIVA SINGH\OneDrive\Documents\LLM\refined\wandb\run-20230520_190905-j4nif0zs\files\wandb-summary.json
+2023-05-20 19:09:09,289 INFO    Thread-16 :10880 [dir_watcher.py:_on_file_created():278] file/dir created: C:\Users\SHIVA SINGH\OneDrive\Documents\LLM\refined\wandb\run-20230520_190905-j4nif0zs\files\output.log
+2023-05-20 19:09:09,315 INFO    wandb-upload_0:10880 [upload_job.py:push():137] Uploaded file C:\Users\SHIVAS~1\AppData\Local\Temp\tmp3mckjftlwandb\w2o0x1kk-wandb-metadata.json
+2023-05-20 19:09:09,623 ERROR   gpu       :10880 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-20 19:09:09,625 ERROR   gpu       :10880 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-20 19:09:09,640 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:09,640 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:09,640 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:09,645 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:10,228 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:10,228 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:10,228 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:10,228 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:10,291 INFO    Thread-16 :10880 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\SHIVA SINGH\OneDrive\Documents\LLM\refined\wandb\run-20230520_190905-j4nif0zs\files\wandb-summary.json
+2023-05-20 19:09:10,729 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:10,729 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:10,729 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:10,734 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:11,104 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: status_report
+2023-05-20 19:09:11,295 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:11,295 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:11,295 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:11,295 INFO    Thread-16 :10880 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\SHIVA SINGH\OneDrive\Documents\LLM\refined\wandb\run-20230520_190905-j4nif0zs\files\output.log
+2023-05-20 19:09:11,295 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:11,295 INFO    Thread-16 :10880 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\SHIVA SINGH\OneDrive\Documents\LLM\refined\wandb\run-20230520_190905-j4nif0zs\files\wandb-summary.json
+2023-05-20 19:09:11,645 ERROR   gpu       :10880 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-20 19:09:11,645 ERROR   gpu       :10880 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-20 19:09:11,765 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:11,765 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:11,765 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:11,772 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:12,235 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:12,235 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:12,235 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:12,245 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:12,312 INFO    Thread-16 :10880 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\SHIVA SINGH\OneDrive\Documents\LLM\refined\wandb\run-20230520_190905-j4nif0zs\files\wandb-summary.json
+2023-05-20 19:09:12,745 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:12,745 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:12,745 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:12,745 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:13,305 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:13,305 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:13,305 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:13,305 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:13,315 INFO    Thread-16 :10880 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\SHIVA SINGH\OneDrive\Documents\LLM\refined\wandb\run-20230520_190905-j4nif0zs\files\output.log
+2023-05-20 19:09:13,315 INFO    Thread-16 :10880 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\SHIVA SINGH\OneDrive\Documents\LLM\refined\wandb\run-20230520_190905-j4nif0zs\files\wandb-summary.json
+2023-05-20 19:09:13,675 ERROR   gpu       :10880 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-20 19:09:13,675 ERROR   gpu       :10880 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-20 19:09:13,997 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:13,997 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:13,997 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:13,997 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:14,317 INFO    Thread-16 :10880 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\SHIVA SINGH\OneDrive\Documents\LLM\refined\wandb\run-20230520_190905-j4nif0zs\files\wandb-summary.json
+2023-05-20 19:09:14,618 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:14,625 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:14,626 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:14,626 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:15,319 INFO    Thread-16 :10880 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\SHIVA SINGH\OneDrive\Documents\LLM\refined\wandb\run-20230520_190905-j4nif0zs\files\output.log
+2023-05-20 19:09:15,319 INFO    Thread-16 :10880 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\SHIVA SINGH\OneDrive\Documents\LLM\refined\wandb\run-20230520_190905-j4nif0zs\files\wandb-summary.json
+2023-05-20 19:09:15,405 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:15,405 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:15,405 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:15,405 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:15,705 ERROR   gpu       :10880 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-20 19:09:15,705 ERROR   gpu       :10880 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-20 19:09:16,160 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: status_report
+2023-05-20 19:09:16,161 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:16,161 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:16,161 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:16,165 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:16,320 INFO    Thread-16 :10880 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\SHIVA SINGH\OneDrive\Documents\LLM\refined\wandb\run-20230520_190905-j4nif0zs\files\wandb-summary.json
+2023-05-20 19:09:16,835 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:16,835 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:16,835 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:16,835 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:17,323 INFO    Thread-16 :10880 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\SHIVA SINGH\OneDrive\Documents\LLM\refined\wandb\run-20230520_190905-j4nif0zs\files\output.log
+2023-05-20 19:09:17,323 INFO    Thread-16 :10880 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\SHIVA SINGH\OneDrive\Documents\LLM\refined\wandb\run-20230520_190905-j4nif0zs\files\wandb-summary.json
+2023-05-20 19:09:17,370 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:17,375 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:17,375 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:17,375 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:17,728 ERROR   gpu       :10880 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-20 19:09:17,735 ERROR   gpu       :10880 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-20 19:09:17,875 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:17,878 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:17,878 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:17,878 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:18,325 INFO    Thread-16 :10880 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\SHIVA SINGH\OneDrive\Documents\LLM\refined\wandb\run-20230520_190905-j4nif0zs\files\wandb-summary.json
+2023-05-20 19:09:18,357 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:18,357 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:18,357 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:18,365 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:18,825 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:18,825 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:18,835 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:18,836 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:19,275 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:19,275 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:19,275 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:19,275 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:19,331 INFO    Thread-16 :10880 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\SHIVA SINGH\OneDrive\Documents\LLM\refined\wandb\run-20230520_190905-j4nif0zs\files\output.log
+2023-05-20 19:09:19,331 INFO    Thread-16 :10880 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\SHIVA SINGH\OneDrive\Documents\LLM\refined\wandb\run-20230520_190905-j4nif0zs\files\wandb-summary.json
+2023-05-20 19:09:19,755 ERROR   gpu       :10880 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-20 19:09:19,755 ERROR   gpu       :10880 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-20 19:09:19,857 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:19,857 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:19,857 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:19,865 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:20,332 INFO    Thread-16 :10880 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\SHIVA SINGH\OneDrive\Documents\LLM\refined\wandb\run-20230520_190905-j4nif0zs\files\wandb-summary.json
+2023-05-20 19:09:20,337 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:20,337 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:20,337 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:20,337 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:20,875 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:20,875 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:20,875 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:20,875 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:21,177 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: status_report
+2023-05-20 19:09:21,336 INFO    Thread-16 :10880 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\SHIVA SINGH\OneDrive\Documents\LLM\refined\wandb\run-20230520_190905-j4nif0zs\files\output.log
+2023-05-20 19:09:21,336 INFO    Thread-16 :10880 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\SHIVA SINGH\OneDrive\Documents\LLM\refined\wandb\run-20230520_190905-j4nif0zs\files\wandb-summary.json
+2023-05-20 19:09:21,355 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:21,355 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:21,355 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:21,355 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:21,774 ERROR   gpu       :10880 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-20 19:09:21,774 ERROR   gpu       :10880 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-20 19:09:21,805 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:21,805 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:21,805 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:21,805 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:22,324 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:22,326 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:22,326 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:22,326 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:22,339 INFO    Thread-16 :10880 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\SHIVA SINGH\OneDrive\Documents\LLM\refined\wandb\run-20230520_190905-j4nif0zs\files\wandb-summary.json
+2023-05-20 19:09:22,815 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:22,816 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:22,816 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:22,817 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:22,927 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-20 19:09:22,927 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: stop_status
+2023-05-20 19:09:23,278 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:23,342 INFO    Thread-16 :10880 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\SHIVA SINGH\OneDrive\Documents\LLM\refined\wandb\run-20230520_190905-j4nif0zs\files\output.log
+2023-05-20 19:09:23,342 INFO    Thread-16 :10880 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\SHIVA SINGH\OneDrive\Documents\LLM\refined\wandb\run-20230520_190905-j4nif0zs\files\wandb-summary.json
+2023-05-20 19:09:23,415 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:23,415 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:23,415 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:23,765 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:23,765 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:23,765 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:23,765 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:23,810 ERROR   gpu       :10880 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-20 19:09:23,810 ERROR   gpu       :10880 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-20 19:09:24,243 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:24,245 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:24,245 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:24,245 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:24,345 INFO    Thread-16 :10880 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\SHIVA SINGH\OneDrive\Documents\LLM\refined\wandb\run-20230520_190905-j4nif0zs\files\wandb-summary.json
+2023-05-20 19:09:24,710 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:24,715 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:24,715 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:24,715 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:25,185 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:25,185 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:25,188 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:25,188 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:25,347 INFO    Thread-16 :10880 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\SHIVA SINGH\OneDrive\Documents\LLM\refined\wandb\run-20230520_190905-j4nif0zs\files\output.log
+2023-05-20 19:09:25,347 INFO    Thread-16 :10880 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\SHIVA SINGH\OneDrive\Documents\LLM\refined\wandb\run-20230520_190905-j4nif0zs\files\wandb-summary.json
+2023-05-20 19:09:25,675 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:25,675 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:25,675 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:25,675 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:25,827 ERROR   gpu       :10880 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-20 19:09:25,827 ERROR   gpu       :10880 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-20 19:09:26,127 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:26,127 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:26,127 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:26,127 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:26,351 INFO    Thread-16 :10880 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\SHIVA SINGH\OneDrive\Documents\LLM\refined\wandb\run-20230520_190905-j4nif0zs\files\wandb-summary.json
+2023-05-20 19:09:26,405 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: status_report
+2023-05-20 19:09:26,575 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:26,575 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:26,575 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:26,585 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:27,065 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:27,065 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:27,065 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:27,069 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:27,357 INFO    Thread-16 :10880 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\SHIVA SINGH\OneDrive\Documents\LLM\refined\wandb\run-20230520_190905-j4nif0zs\files\output.log
+2023-05-20 19:09:27,357 INFO    Thread-16 :10880 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\SHIVA SINGH\OneDrive\Documents\LLM\refined\wandb\run-20230520_190905-j4nif0zs\files\wandb-summary.json
+2023-05-20 19:09:27,535 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:27,535 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:27,535 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:27,535 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:27,847 ERROR   gpu       :10880 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-20 19:09:27,847 ERROR   gpu       :10880 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-20 19:09:28,035 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:28,035 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:28,035 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:28,035 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:28,362 INFO    Thread-16 :10880 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\SHIVA SINGH\OneDrive\Documents\LLM\refined\wandb\run-20230520_190905-j4nif0zs\files\wandb-summary.json
+2023-05-20 19:09:28,495 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:28,495 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:28,495 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:28,495 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:28,985 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:28,985 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:28,985 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:28,995 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:29,367 INFO    Thread-16 :10880 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\SHIVA SINGH\OneDrive\Documents\LLM\refined\wandb\run-20230520_190905-j4nif0zs\files\output.log
+2023-05-20 19:09:29,367 INFO    Thread-16 :10880 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\SHIVA SINGH\OneDrive\Documents\LLM\refined\wandb\run-20230520_190905-j4nif0zs\files\wandb-summary.json
+2023-05-20 19:09:29,455 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:29,455 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:29,455 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:29,455 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:29,875 ERROR   gpu       :10880 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-20 19:09:29,875 ERROR   gpu       :10880 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-20 19:09:29,945 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:29,950 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:29,950 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:29,950 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:30,369 INFO    Thread-16 :10880 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\SHIVA SINGH\OneDrive\Documents\LLM\refined\wandb\run-20230520_190905-j4nif0zs\files\wandb-summary.json
+2023-05-20 19:09:30,435 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:30,435 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:30,435 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:30,435 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:30,884 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:30,884 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:30,884 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:30,895 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:31,375 INFO    Thread-16 :10880 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\SHIVA SINGH\OneDrive\Documents\LLM\refined\wandb\run-20230520_190905-j4nif0zs\files\output.log
+2023-05-20 19:09:31,375 INFO    Thread-16 :10880 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\SHIVA SINGH\OneDrive\Documents\LLM\refined\wandb\run-20230520_190905-j4nif0zs\files\wandb-summary.json
+2023-05-20 19:09:31,395 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:31,395 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:31,395 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:31,406 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:31,406 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: status_report
+2023-05-20 19:09:31,895 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:31,895 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:31,899 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:31,900 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:31,905 ERROR   gpu       :10880 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-20 19:09:31,905 ERROR   gpu       :10880 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-20 19:09:32,346 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:32,353 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:32,353 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:32,355 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:32,378 INFO    Thread-16 :10880 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\SHIVA SINGH\OneDrive\Documents\LLM\refined\wandb\run-20230520_190905-j4nif0zs\files\wandb-summary.json
+2023-05-20 19:09:32,815 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:32,815 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:32,815 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:32,824 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:33,305 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:33,305 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:33,305 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:33,305 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:33,382 INFO    Thread-16 :10880 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\SHIVA SINGH\OneDrive\Documents\LLM\refined\wandb\run-20230520_190905-j4nif0zs\files\output.log
+2023-05-20 19:09:33,382 INFO    Thread-16 :10880 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\SHIVA SINGH\OneDrive\Documents\LLM\refined\wandb\run-20230520_190905-j4nif0zs\files\wandb-summary.json
+2023-05-20 19:09:33,765 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:33,765 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:33,765 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:33,765 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:33,924 ERROR   gpu       :10880 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-20 19:09:33,924 ERROR   gpu       :10880 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-20 19:09:34,225 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:34,225 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:34,225 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:34,225 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:34,385 INFO    Thread-16 :10880 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\SHIVA SINGH\OneDrive\Documents\LLM\refined\wandb\run-20230520_190905-j4nif0zs\files\wandb-summary.json
+2023-05-20 19:09:34,695 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:34,695 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:34,695 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:34,702 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:35,147 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:35,147 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:35,147 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:35,147 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:35,387 INFO    Thread-16 :10880 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\SHIVA SINGH\OneDrive\Documents\LLM\refined\wandb\run-20230520_190905-j4nif0zs\files\output.log
+2023-05-20 19:09:35,387 INFO    Thread-16 :10880 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\SHIVA SINGH\OneDrive\Documents\LLM\refined\wandb\run-20230520_190905-j4nif0zs\files\wandb-summary.json
+2023-05-20 19:09:35,615 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:35,615 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:35,615 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:35,615 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:35,946 ERROR   gpu       :10880 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-20 19:09:35,946 ERROR   gpu       :10880 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-20 19:09:36,186 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:36,186 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:36,186 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:36,186 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:36,394 INFO    Thread-16 :10880 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\SHIVA SINGH\OneDrive\Documents\LLM\refined\wandb\run-20230520_190905-j4nif0zs\files\wandb-summary.json
+2023-05-20 19:09:36,505 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: status_report
+2023-05-20 19:09:36,729 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:36,915 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:36,915 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:36,915 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:37,295 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:37,295 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:37,295 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:37,304 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:37,399 INFO    Thread-16 :10880 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\SHIVA SINGH\OneDrive\Documents\LLM\refined\wandb\run-20230520_190905-j4nif0zs\files\output.log
+2023-05-20 19:09:37,399 INFO    Thread-16 :10880 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\SHIVA SINGH\OneDrive\Documents\LLM\refined\wandb\run-20230520_190905-j4nif0zs\files\wandb-summary.json
+2023-05-20 19:09:37,399 INFO    Thread-16 :10880 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\SHIVA SINGH\OneDrive\Documents\LLM\refined\wandb\run-20230520_190905-j4nif0zs\files\config.yaml
+2023-05-20 19:09:37,816 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:37,825 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:37,825 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:37,825 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:37,945 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-20 19:09:37,945 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: stop_status
+2023-05-20 19:09:38,025 ERROR   gpu       :10880 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2023-05-20 19:09:38,030 ERROR   gpu       :10880 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-20 19:09:38,030 ERROR   gpu       :10880 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-05-20 19:09:38,295 DEBUG   HandlerThread:10880 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-20 19:09:38,340 DEBUG   SenderThread:10880 [sender.py:send():375] send: history
+2023-05-20 19:09:38,340 DEBUG   SenderThread:10880 [sender.py:send_request():402] send_request: summary_record
+2023-05-20 19:09:38,340 INFO    SenderThread:10880 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-20 19:09:38,403 INFO    Thread-16 :10880 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\SHIVA SINGH\OneDrive\Documents\LLM\refined\wandb\run-20230520_190905-j4nif0zs\files\wandb-summary.json
+2023-05-20 19:09:39,413 INFO    Thread-16 :10880 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\SHIVA SINGH\OneDrive\Documents\LLM\refined\wandb\run-20230520_190905-j4nif0zs\files\output.log

@@ -74,9 +74,7 @@ device = 'cuda' if torch.cuda.is_available() else 'cpu'
 #       x, y = x.to(device), y.to(device)
 #   return x, y
 
-train_dataloader = torch.utils.data.DataLoader(
-    dataset=train_dataset,
-) 
+
 
 
 
