@@ -1,0 +1,94 @@
+Traceback (most recent call last):
+  File "c:\Users\SHIVA SINGH\OneDrive\Documents\LLM\pl\main.py", line 551, in <module>
+    t.train()
+  File "c:\Users\SHIVA SINGH\OneDrive\Documents\LLM\pl\main.py", line 477, in train
+    losses = self.estimate_loss(self.config)
+  File "C:\Users\SHIVA SINGH\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\utils\_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "c:\Users\SHIVA SINGH\OneDrive\Documents\LLM\pl\main.py", line 518, in estimate_loss
+    loss = model.training_step(batch, k)
+  File "c:\Users\SHIVA SINGH\OneDrive\Documents\LLM\pl\main.py", line 359, in training_step
+    logits = self(x)#b t vocab_dim
+  File "C:\Users\SHIVA SINGH\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "c:\Users\SHIVA SINGH\OneDrive\Documents\LLM\pl\main.py", line 344, in forward
+    pos = torch.arange(0,t,dtype=torch.int32, device=self.device).unsqueeze(0)
+RuntimeError: CUDA error: out of memory
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
++--------------------- Traceback (most recent call last) ---------------------+
+| c:\Users\SHIVA SINGH\OneDrive\Documents\LLM\pl\main.py:551 in <module>      |
+|                                                                             |
+|   548                                                                       |
+|   549 t = Trainer(config, model, DataModule)                                |
+|   550                                                                       |
+| > 551 t.train()                                                             |
+|   552                                                                       |
+|   553                                                                       |
+|   554                                                                       |
+|                                                                             |
+| c:\Users\SHIVA SINGH\OneDrive\Documents\LLM\pl\main.py:477 in train         |
+|                                                                             |
+|   474                                                                       |
+|   475                                                                       |
+|   476       if iter_num % self.config.eval_interval == 0 and master_process |
+| > 477         losses = self.estimate_loss(self.config)                      |
+|   478         print(f"step {iter_num}: eval_loss {losses['val']:.4f}")      |
+|   479                                                                       |
+|   480                                                                       |
+|                                                                             |
+| C:\Users\SHIVA                                                              |
+| SINGH\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\utils |
+| \_contextlib.py:115 in decorate_context                                     |
+|                                                                             |
+|   112     @functools.wraps(func)                                            |
+|   113     def decorate_context(*args, **kwargs):                            |
+|   114         with ctx_factory():                                           |
+| > 115             return func(*args, **kwargs)                              |
+|   116                                                                       |
+|   117     return decorate_context                                           |
+|   118                                                                       |
+|                                                                             |
+| c:\Users\SHIVA SINGH\OneDrive\Documents\LLM\pl\main.py:518 in estimate_loss |
+|                                                                             |
+|   515     for split in ["val"]:                                             |
+|   516       losses = torch.zeros(config.eval_iters)                         |
+|   517       for k,batch in enumerate(self.dm.val_dataloader()):             |
+| > 518         loss = model.training_step(batch, k)                          |
+|   519         losses[k] = loss.item()                                       |
+|   520         if k>config.eval_iters:                                       |
+|   521           break                                                       |
+|                                                                             |
+| c:\Users\SHIVA SINGH\OneDrive\Documents\LLM\pl\main.py:359 in training_step |
+|                                                                             |
+|   356     x,y = batch                                                       |
+|   357     x = x.to(self.device)                                             |
+|   358     y = y.to(self.device)                                             |
+| > 359     logits = self(x)#b t vocab_dim                                    |
+|   360     B,T,vdim = logits.shape                                           |
+|   361                                                                       |
+|   362     logits = logits.view(B*T,vdim)                                    |
+|                                                                             |
+| C:\Users\SHIVA                                                              |
+| SINGH\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\nn\mo |
+| dules\module.py:1501 in _call_impl                                          |
+|                                                                             |
+|   1498         if not (self._backward_hooks or self._backward_pre_hooks or  |
+|   1499                 or _global_backward_pre_hooks or _global_backward_ho |
+|   1500                 or _global_forward_hooks or _global_forward_pre_hook |
+| > 1501             return forward_call(*args, **kwargs)                     |
+|   1502         # Do not call functions when jit is used                     |
+|   1503         full_backward_hooks, non_full_backward_hooks = [], []        |
+|   1504         backward_pre_hooks = []                                      |
+|                                                                             |
+| c:\Users\SHIVA SINGH\OneDrive\Documents\LLM\pl\main.py:344 in forward       |
+|                                                                             |
+|   341                                                                       |
+|   342   def forward(self,x,y=None):#X=[B,CONTEXT_SIZE] = B,T                |
+|   343     b,t = x.size()                                                    |
+| > 344     pos = torch.arange(0,t,dtype=torch.int32, device=self.device).uns |
+|   345     t_emb = self.transformer.wte(x)                                   |
+|   346     #B,CONTEXT_SIZE,VOCAB_SIZE = B,T,C                                |
+|   347     p_emb = self.transformer.wpe(pos)                                 |
++-----------------------------------------------------------------------------+
+RuntimeError: CUDA error: out of memory
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
