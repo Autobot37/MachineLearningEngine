@@ -1,0 +1,50 @@
+{
+    "os": "Windows-10-10.0.22621-SP0",
+    "python": "3.10.0",
+    "heartbeatAt": "2023-06-05T10:54:55.792615",
+    "startedAt": "2023-06-05T10:54:52.929329",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "C:\\Users\\SHIVA SINGH\\Documents\\GitHub\\MachineLearningEngine\\LLM\\main.py",
+    "codePath": "LLM\\main.py",
+    "git": {
+        "remote": "https://github.com/Autobot37/MachineLearningEngine.git",
+        "commit": "2de030587eb7265ca0277857ea9e2a81f326b993"
+    },
+    "email": "93463931+Autobot37@users.noreply.github.com",
+    "root": "C:/Users/SHIVA SINGH/Documents/GitHub/MachineLearningEngine",
+    "host": "SS-Panzer",
+    "username": "SHIVA SINGH",
+    "executable": "C:\\Users\\SHIVA SINGH\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 2419.0,
+        "min": 0.0,
+        "max": 2419.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2419.0,
+            "min": 0.0,
+            "max": 2419.0
+        }
+    ],
+    "disk": {
+        "total": 185.18261337280273,
+        "used": 173.90999221801758
+    },
+    "gpu": "NVIDIA GeForce MX350",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce MX350",
+            "memory_total": 2147483648
+        }
+    ],
+    "memory": {
+        "total": 7.741001129150391
+    }
+}

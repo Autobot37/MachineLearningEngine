@@ -1,0 +1,136 @@
+Traceback (most recent call last):
+  File "C:\Users\SHIVA SINGH\Documents\GitHub\MachineLearningEngine\LLM\main.py", line 552, in <module>
+    t.train()
+  File "C:\Users\SHIVA SINGH\Documents\GitHub\MachineLearningEngine\LLM\main.py", line 478, in train
+    losses = self.estimate_loss(self.config)
+  File "C:\Users\SHIVA SINGH\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\utils\_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "C:\Users\SHIVA SINGH\Documents\GitHub\MachineLearningEngine\LLM\main.py", line 519, in estimate_loss
+    loss = model.training_step(batch, k)
+  File "C:\Users\SHIVA SINGH\Documents\GitHub\MachineLearningEngine\LLM\main.py", line 360, in training_step
+    logits = self(x)#b t vocab_dim
+  File "C:\Users\SHIVA SINGH\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\SHIVA SINGH\Documents\GitHub\MachineLearningEngine\LLM\main.py", line 346, in forward
+    t_emb = self.transformer.wte(x)
+  File "C:\Users\SHIVA SINGH\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\SHIVA SINGH\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\nn\modules\sparse.py", line 162, in forward
+    return F.embedding(
+  File "C:\Users\SHIVA SINGH\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\nn\functional.py", line 2210, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+RuntimeError: CUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+[31m╭─────────────────────────────── [39m[1mTraceback (most recent call last)[31m[22m ────────────────────────────────╮
+[31m│[39m [33mC:\Users\SHIVA SINGH\Documents\GitHub\MachineLearningEngine\LLM\main.py[39m:[94m552[39m in [92m<module>[39m          [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m   549                                                                                            [31m│
+[31m│[39m   550 t = Trainer(config, model, DataModule)                                                     [31m│
+[31m│[39m   551                                                                                            [31m│
+[31m│[39m [31m❱ [39m552 t.train()                                                                                  [31m│
+[31m│[39m   553                                                                                            [31m│
+[31m│[39m   554                                                                                            [31m│
+[31m│[39m   555                                                                                            [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m [33mC:\Users\SHIVA SINGH\Documents\GitHub\MachineLearningEngine\LLM\main.py[39m:[94m478[39m in [92mtrain[39m             [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m   475 │                                                                                          [31m│
+[31m│[39m   476 │                                                                                          [31m│
+[31m│[39m   477 │     [94mif[39m iter_num % [96mself[39m.config.eval_interval == [94m0[39m [95mand[39m master_process:                     [31m│
+[31m│[39m [31m❱ [39m478 │   │   losses = [96mself[39m.estimate_loss([96mself[39m.config)                                           [31m│
+[31m│[39m   479 │   │   [96mprint[39m([33mf"step {[39miter_num[33m}: eval_loss {[39mlosses[[33m'val'[39m][33m:.4f}"[39m)                           [31m│
+[31m│[39m   480                                                                                            [31m│
+[31m│[39m   481                                                                                            [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m [33mC:\Users\SHIVA [39m                                                                                  [31m│
+[31m│[39m [33mSINGH\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\utils\_contextlib.py[39m:[94m115[39m   [31m│
+[31m│[39m in [92mdecorate_context[39m                                                                              [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m   112 │   [1m@functools[22m.wraps(func)                                                                 [31m│
+[31m│[39m   113 │   [94mdef[39m [92mdecorate_context[39m(*args, **kwargs):                                                 [31m│
+[31m│[39m   114 │   │   [94mwith[39m ctx_factory():                                                                [31m│
+[31m│[39m [31m❱ [39m115 │   │   │   [94mreturn[39m func(*args, **kwargs)                                                   [31m│
+[31m│[39m   116 │                                                                                          [31m│
+[31m│[39m   117 │   [94mreturn[39m decorate_context                                                                [31m│
+[31m│[39m   118                                                                                            [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m [33mC:\Users\SHIVA SINGH\Documents\GitHub\MachineLearningEngine\LLM\main.py[39m:[94m519[39m in [92mestimate_loss[39m     [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m   516 │   [94mfor[39m split [95min[39m [[33m"val"[39m]:                                                                  [31m│
+[31m│[39m   517 │     losses = torch.zeros(config.eval_iters)                                              [31m│
+[31m│[39m   518 │     [94mfor[39m k,batch [95min[39m [96menumerate[39m([96mself[39m.dm.val_dataloader()):                                  [31m│
+[31m│[39m [31m❱ [39m519 │   │   loss = model.training_step(batch, k)                                               [31m│
+[31m│[39m   520 │   │   losses[k] = loss.item()                                                            [31m│
+[31m│[39m   521 │   │   [94mif[39m k>config.eval_iters:                                                            [31m│
+[31m│[39m   522 │   │     [94mbreak[39m                                                                            [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m [33mC:\Users\SHIVA SINGH\Documents\GitHub\MachineLearningEngine\LLM\main.py[39m:[94m360[39m in [92mtraining_step[39m     [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m   357 │   x,y = batch                                                                            [31m│
+[31m│[39m   358 │   x = x.to([96mself[39m.device)                                                                  [31m│
+[31m│[39m   359 │   y = y.to([96mself[39m.device)                                                                  [31m│
+[31m│[39m [31m❱ [39m360 │   logits = [96mself[39m(x)#b t vocab_dim                                                         [31m│
+[31m│[39m   361 │   B,T,vdim = logits.shape                                                                [31m│
+[31m│[39m   362 │                                                                                          [31m│
+[31m│[39m   363 │   logits = logits.view(B*T,vdim)                                                         [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m [33mC:\Users\SHIVA [39m                                                                                  [31m│
+[31m│[39m [33mSINGH\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\nn\modules\module.py[39m:[94m1501[39m  [31m│
+[31m│[39m in [92m_call_impl[39m                                                                                    [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m   1498 │   │   [94mif[39m [95mnot[39m ([96mself[39m._backward_hooks [95mor[39m [96mself[39m._backward_pre_hooks [95mor[39m [96mself[39m._forward_hooks   [31m│
+[31m│[39m   1499 │   │   │   │   [95mor[39m _global_backward_pre_hooks [95mor[39m _global_backward_hooks                   [31m│
+[31m│[39m   1500 │   │   │   │   [95mor[39m _global_forward_hooks [95mor[39m _global_forward_pre_hooks):                   [31m│
+[31m│[39m [31m❱ [39m1501 │   │   │   [94mreturn[39m forward_call(*args, **kwargs)                                          [31m│
+[31m│[39m   1502 │   │   # Do not call functions when jit is used                                          [31m│
+[31m│[39m   1503 │   │   full_backward_hooks, non_full_backward_hooks = [], []                             [31m│
+[31m│[39m   1504 │   │   backward_pre_hooks = []                                                           [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m [33mC:\Users\SHIVA SINGH\Documents\GitHub\MachineLearningEngine\LLM\main.py[39m:[94m346[39m in [92mforward[39m           [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m   343 │   b,t = x.size()                                                                         [31m│
+[31m│[39m   344 │   pos = torch.arange([94m0[39m,t,dtype=torch.int32, device=[96mself[39m.device).unsqueeze([94m0[39m)             [31m│
+[31m│[39m   345 │   x = x.to(torch.int64)                                                                  [31m│
+[31m│[39m [31m❱ [39m346 │   t_emb = [96mself[39m.transformer.wte(x)                                                        [31m│
+[31m│[39m   347 │   #B,CONTEXT_SIZE,VOCAB_SIZE = B,T,C                                                     [31m│
+[31m│[39m   348 │   p_emb = [96mself[39m.transformer.wpe(pos)                                                      [31m│
+[31m│[39m   349 │   x = [96mself[39m.transformer.drop(t_emb+p_emb)                                                 [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m [33mC:\Users\SHIVA [39m                                                                                  [31m│
+[31m│[39m [33mSINGH\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\nn\modules\module.py[39m:[94m1501[39m  [31m│
+[31m│[39m in [92m_call_impl[39m                                                                                    [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m   1498 │   │   [94mif[39m [95mnot[39m ([96mself[39m._backward_hooks [95mor[39m [96mself[39m._backward_pre_hooks [95mor[39m [96mself[39m._forward_hooks   [31m│
+[31m│[39m   1499 │   │   │   │   [95mor[39m _global_backward_pre_hooks [95mor[39m _global_backward_hooks                   [31m│
+[31m│[39m   1500 │   │   │   │   [95mor[39m _global_forward_hooks [95mor[39m _global_forward_pre_hooks):                   [31m│
+[31m│[39m [31m❱ [39m1501 │   │   │   [94mreturn[39m forward_call(*args, **kwargs)                                          [31m│
+[31m│[39m   1502 │   │   # Do not call functions when jit is used                                          [31m│
+[31m│[39m   1503 │   │   full_backward_hooks, non_full_backward_hooks = [], []                             [31m│
+[31m│[39m   1504 │   │   backward_pre_hooks = []                                                           [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m [33mC:\Users\SHIVA [39m                                                                                  [31m│
+[31m│[39m [33mSINGH\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\nn\modules\sparse.py[39m:[94m162[39m   [31m│
+[31m│[39m in [92mforward[39m                                                                                       [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m   159 │   │   │   │   [96mself[39m.weight[[96mself[39m.padding_idx].fill_([94m0[39m)                                     [31m│
+[31m│[39m   160 │                                                                                          [31m│
+[31m│[39m   161 │   [94mdef[39m [92mforward[39m([96mself[39m, [96minput[39m: Tensor) -> Tensor:                                            [31m│
+[31m│[39m [31m❱ [39m162 │   │   [94mreturn[39m F.embedding(                                                                [31m│
+[31m│[39m   163 │   │   │   [96minput[39m, [96mself[39m.weight, [96mself[39m.padding_idx, [96mself[39m.max_norm,                           [31m│
+[31m│[39m   164 │   │   │   [96mself[39m.norm_type, [96mself[39m.scale_grad_by_freq, [96mself[39m.sparse)                          [31m│
+[31m│[39m   165                                                                                            [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m [33mC:\Users\SHIVA [39m                                                                                  [31m│
+[31m│[39m [33mSINGH\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\nn\functional.py[39m:[94m2210[39m in   [31m│
+[31m│[39m [92membedding[39m                                                                                        [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m   2207 │   │   #   torch.embedding_renorm_                                                       [31m│
+[31m│[39m   2208 │   │   # remove once script supports set_grad_enabled                                    [31m│
+[31m│[39m   2209 │   │   _no_grad_embedding_renorm_(weight, [96minput[39m, max_norm, norm_type)                    [31m│
+[31m│[39m [31m❱ [39m2210 │   [94mreturn[39m torch.embedding(weight, [96minput[39m, padding_idx, scale_grad_by_freq, sparse)        [31m│
+[31m│[39m   2211                                                                                           [31m│
+[31m│[39m   2212                                                                                           [31m│
+[31m│[39m   2213 [94mdef[39m [92membedding_bag[39m(                                                                        [31m│
+[31m╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+[1mRuntimeError: [22mCUDA error: device-side assert triggered
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.

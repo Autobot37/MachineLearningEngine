@@ -1,0 +1,4 @@
+step 0: eval_loss 0.8230
+saving checkpoint0
+iter 0: loss 3.3185, time 39895.67ms
+c:\Users\SHIVA SINGH\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\cuda\memory.py:303: FutureWarning: torch.cuda.reset_max_memory_allocated now calls torch.cuda.reset_peak_memory_stats, which resets /all/ peak memory stats.

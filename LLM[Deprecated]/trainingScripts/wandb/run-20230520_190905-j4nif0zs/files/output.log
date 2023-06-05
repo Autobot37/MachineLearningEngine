@@ -1,0 +1,173 @@
+step 0: train loss 7.7496
+saving checkpoint tp out
+time -> one epoch of dataloader : 13.844615459442139
+step 1: train loss 7.7503
+saving checkpoint tp out
+time -> one epoch of dataloader : 14.384761095046997
+step 2: train loss 7.7404
+saving checkpoint tp out
+time -> one epoch of dataloader : 14.924765348434448
+step 3: train loss 7.7428
+saving checkpoint tp out
+time -> one epoch of dataloader : 15.4944429397583
+step 4: train loss 7.7346
+saving checkpoint tp out
+time -> one epoch of dataloader : 15.974607706069946
+step 5: train loss 7.7399
+saving checkpoint tp out
+time -> one epoch of dataloader : 16.446697235107422
+step 6: train loss 7.7367
+saving checkpoint tp out
+time -> one epoch of dataloader : 16.941586017608643
+step 7: train loss 7.7683
+saving checkpoint tp out
+time -> one epoch of dataloader : 17.43464708328247
+step 8: train loss 7.7493
+saving checkpoint tp out
+time -> one epoch of dataloader : 18.13496971130371
+step 9: train loss 7.7617
+saving checkpoint tp out
+time -> one epoch of dataloader : 18.724812030792236
+step 10: train loss 7.7558
+saving checkpoint tp out
+time -> one epoch of dataloader : 19.51703715324402
+step 11: train loss 7.7312
+saving checkpoint tp out
+time -> one epoch of dataloader : 20.223637104034424
+step 12: train loss 7.7539
+saving checkpoint tp out
+time -> one epoch of dataloader : 20.980754852294922
+step 13: train loss 7.7748
+saving checkpoint tp out
+time -> one epoch of dataloader : 21.56484293937683
+step 14: train loss 7.7548
+saving checkpoint tp out
+time -> one epoch of dataloader : 22.054619073867798
+step 15: train loss 7.7505
+saving checkpoint tp out
+time -> one epoch of dataloader : 22.554863452911377
+step 16: train loss 7.7316
+saving checkpoint tp out
+time -> one epoch of dataloader : 23.034873485565186
+step 17: train loss 7.7317
+saving checkpoint tp out
+time -> one epoch of dataloader : 23.497385263442993
+step 18: train loss 7.7525
+saving checkpoint tp out
+time -> one epoch of dataloader : 23.97475552558899
+step 19: train loss 7.7246
+saving checkpoint tp out
+time -> one epoch of dataloader : 24.547335147857666
+step 20: train loss 7.7394
+saving checkpoint tp out
+time -> one epoch of dataloader : 25.05489158630371
+step 21: train loss 7.7586
+saving checkpoint tp out
+time -> one epoch of dataloader : 25.566616773605347
+step 22: train loss 7.7538
+saving checkpoint tp out
+time -> one epoch of dataloader : 26.02959418296814
+step 23: train loss 7.7459
+saving checkpoint tp out
+time -> one epoch of dataloader : 26.50467014312744
+step 24: train loss 7.7519
+saving checkpoint tp out
+time -> one epoch of dataloader : 27.014843940734863
+step 25: train loss 7.7131
+saving checkpoint tp out
+time -> one epoch of dataloader : 27.494725942611694
+step 26: train loss 7.7553
+saving checkpoint tp out
+time -> one epoch of dataloader : 27.954774379730225
+step 27: train loss 7.7655
+saving checkpoint tp out
+time -> one epoch of dataloader : 28.464842319488525
+step 28: train loss 7.7493
+saving checkpoint tp out
+time -> one epoch of dataloader : 28.908358335494995
+step 29: train loss 7.7592
+saving checkpoint tp out
+time -> one epoch of dataloader : 29.40480327606201
+step 30: train loss 7.7334
+saving checkpoint tp out
+time -> one epoch of dataloader : 29.880645513534546
+step 31: train loss 7.7349
+saving checkpoint tp out
+time -> one epoch of dataloader : 30.34478259086609
+step 32: train loss 7.7398
+saving checkpoint tp out
+time -> one epoch of dataloader : 30.79497528076172
+step 33: train loss 7.7427
+saving checkpoint tp out
+time -> one epoch of dataloader : 31.284806489944458
+step 34: train loss 7.7410
+saving checkpoint tp out
+time -> one epoch of dataloader : 31.75486397743225
+step 35: train loss 7.7504
+saving checkpoint tp out
+time -> one epoch of dataloader : 32.224995374679565
+step 36: train loss 7.7484
+saving checkpoint tp out
+time -> one epoch of dataloader : 32.714741706848145
+step 37: train loss 7.7474
+saving checkpoint tp out
+time -> one epoch of dataloader : 33.194870710372925
+step 38: train loss 7.7204
+saving checkpoint tp out
+time -> one epoch of dataloader : 33.66464567184448
+step 39: train loss 7.7535
+saving checkpoint tp out
+time -> one epoch of dataloader : 34.12460279464722
+step 40: train loss 7.7350
+saving checkpoint tp out
+time -> one epoch of dataloader : 34.64500951766968
+step 41: train loss 7.7370
+saving checkpoint tp out
+time -> one epoch of dataloader : 35.10476303100586
+step 42: train loss 7.7584
+saving checkpoint tp out
+time -> one epoch of dataloader : 35.58468508720398
+step 43: train loss 7.7329
+saving checkpoint tp out
+time -> one epoch of dataloader : 36.10508370399475
+step 44: train loss 7.7058
+saving checkpoint tp out
+time -> one epoch of dataloader : 36.57486438751221
+step 45: train loss 7.7375
+saving checkpoint tp out
+time -> one epoch of dataloader : 37.014596462249756
+step 46: train loss 7.7306
+saving checkpoint tp out
+time -> one epoch of dataloader : 37.50493884086609
+step 47: train loss 7.7400
+saving checkpoint tp out
+time -> one epoch of dataloader : 37.98500394821167
+step 48: train loss 7.7097
+saving checkpoint tp out
+time -> one epoch of dataloader : 38.45567274093628
+step 49: train loss 7.7282
+saving checkpoint tp out
+time -> one epoch of dataloader : 38.917789697647095
+step 50: train loss 7.7169
+saving checkpoint tp out
+time -> one epoch of dataloader : 39.364731788635254
+step 51: train loss 7.7319
+saving checkpoint tp out
+time -> one epoch of dataloader : 39.82481026649475
+step 52: train loss 7.7292
+saving checkpoint tp out
+time -> one epoch of dataloader : 40.354788064956665
+step 53: train loss 7.7351
+saving checkpoint tp out
+time -> one epoch of dataloader : 40.89468216896057
+step 54: train loss 7.7223
+saving checkpoint tp out
+time -> one epoch of dataloader : 41.4647798538208
+step 55: train loss 7.7125
+saving checkpoint tp out
+time -> one epoch of dataloader : 42.00462484359741
+step 56: train loss 7.7403
+saving checkpoint tp out
+time -> one epoch of dataloader : 42.51467990875244
+step 57: train loss 7.7143
+saving checkpoint tp out
