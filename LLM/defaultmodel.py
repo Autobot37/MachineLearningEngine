@@ -3,7 +3,9 @@
 ###IF CUDA ASSERTION ERROR RUN CUSTOM OR COLAB GPU OR STEP BY STEP or cpus
 import math
 from typing import List, Optional, Tuple, Any, Union
-from config import ModelConfig
+from settings import ModelConfig
+from dataclasses import dataclass
+import torch.nn as nn
 
 class CausalSelfAttention(nn.Module):
   def __init__(self,config:Config) -> None:

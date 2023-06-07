@@ -1,0 +1,30 @@
+step 0: eval_loss 1.2546
+saving checkpoint0
+Traceback (most recent call last):
+  File "C:\Users\SHIVA SINGH\Documents\GitHub\MachineLearningEngine\LLM\main.py", line 615, in <module>
+    t.train()
+  File "C:\Users\SHIVA SINGH\Documents\GitHub\MachineLearningEngine\LLM\main.py", line 547, in train
+    with profile(activities=[ProfilerActivity.CPU, ProfilerActivity.CUDA]) as prof:
+NameError: name 'profile' is not defined
+[31m╭─────────────────────────────── [39m[1mTraceback (most recent call last)[31m[22m ────────────────────────────────╮
+[31m│[39m [33mC:\Users\SHIVA SINGH\Documents\GitHub\MachineLearningEngine\LLM\main.py[39m:[94m615[39m in [92m<module>[39m          [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m   612 t = Trainer(config, model, DataModule)                                                     [31m│
+[31m│[39m   613                                                                                            [31m│
+[31m│[39m   614 # %%                                                                                       [31m│
+[31m│[39m [31m❱ [39m615 t.train()                                                                                  [31m│
+[31m│[39m   616                                                                                            [31m│
+[31m│[39m   617 # %%                                                                                       [31m│
+[31m│[39m   618 torch.cuda.memory_allocated()                                                              [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m [33mC:\Users\SHIVA SINGH\Documents\GitHub\MachineLearningEngine\LLM\main.py[39m:[94m547[39m in [92mtrain[39m             [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m   544 │     [94mfor[39m batch_idx, batch [95min[39m [96menumerate[39m([96mself[39m.dm.train_dataloader()):                       [31m│
+[31m│[39m   545 │   │   is_accumulating = batch_idx < [96mself[39m.config.gradient_accumulation_steps              [31m│
+[31m│[39m   546 │   │   [94mwith[39m [96mself[39m.fabric.no_backward_sync([96mself[39m.model,enabled=(is_accumulating)):           [31m│
+[31m│[39m [31m❱ [39m547 │   │     [94mwith[39m profile(activities=[ProfilerActivity.CPU, ProfilerActivity.CUDA]) [94mas[39m prof   [31m│
+[31m│[39m   548 │   │   │   loss = [96mself[39m.model.training_step(batch, batch_idx)                              [31m│
+[31m│[39m   549 │   │   │   prof.export_chrome_trace([33m"trace.json"[39m)                                         [31m│
+[31m│[39m   550 │   │   │   [96mself[39m.wandblog([96miter[39m=iter_num,loss=loss)                                         [31m│
+[31m╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+[1mNameError: [22mname [32m'profile'[39m is not defined

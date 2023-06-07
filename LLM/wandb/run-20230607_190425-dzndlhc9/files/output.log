@@ -1,0 +1,72 @@
+step 0: eval_loss 1.2507
+saving checkpoint0
+Traceback (most recent call last):
+  File "C:\Users\SHIVA SINGH\Documents\GitHub\MachineLearningEngine\LLM\main.py", line 619, in <module>
+    t.train()
+  File "C:\Users\SHIVA SINGH\Documents\GitHub\MachineLearningEngine\LLM\main.py", line 550, in train
+    prof.export_chrome_trace("trace.json")
+  File "C:\Users\SHIVA SINGH\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\profiler\profiler.py", line 156, in export_chrome_trace
+    return self.profiler.export_chrome_trace(path)
+  File "C:\Users\SHIVA SINGH\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\autograd\profiler.py", line 279, in export_chrome_trace
+    self._check_finish()
+  File "C:\Users\SHIVA SINGH\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\autograd\profiler.py", line 253, in _check_finish
+    raise RuntimeError("Profiler didn't finish running")
+RuntimeError: Profiler didn't finish running
+[31m╭─────────────────────────────── [39m[1mTraceback (most recent call last)[31m[22m ────────────────────────────────╮
+[31m│[39m [33mC:\Users\SHIVA SINGH\Documents\GitHub\MachineLearningEngine\LLM\main.py[39m:[94m619[39m in [92m<module>[39m          [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m   616 t = Trainer(config, model, DataModule)                                                     [31m│
+[31m│[39m   617                                                                                            [31m│
+[31m│[39m   618 # %%                                                                                       [31m│
+[31m│[39m [31m❱ [39m619 t.train()                                                                                  [31m│
+[31m│[39m   620                                                                                            [31m│
+[31m│[39m   621 # %%                                                                                       [31m│
+[31m│[39m   622 torch.cuda.memory_allocated()                                                              [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m [33mC:\Users\SHIVA SINGH\Documents\GitHub\MachineLearningEngine\LLM\main.py[39m:[94m550[39m in [92mtrain[39m             [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m   547 │   │   [94mwith[39m [96mself[39m.fabric.no_backward_sync([96mself[39m.model,enabled=(is_accumulating)):           [31m│
+[31m│[39m   548 │   │     [94mwith[39m profile(activities=[ProfilerActivity.CPU, ProfilerActivity.CUDA]) [94mas[39m prof   [31m│
+[31m│[39m   549 │   │   │   loss = [96mself[39m.model.training_step(batch, batch_idx)                              [31m│
+[31m│[39m [31m❱ [39m550 │   │   │   prof.export_chrome_trace([33m"trace.json"[39m)                                         [31m│
+[31m│[39m   551 │   │   │   [94mbreak[39m                                                                          [31m│
+[31m│[39m   552 │   │   │   time.sleep([94m5[39m)                                                                  [31m│
+[31m│[39m   553 │   │   │   [96mself[39m.wandblog([96miter[39m=iter_num,loss=loss)                                         [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m [33mC:\Users\SHIVA [39m                                                                                  [31m│
+[31m│[39m [33mSINGH\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\profiler\profiler.py[39m:[94m156[39m   [31m│
+[31m│[39m in [92mexport_chrome_trace[39m                                                                           [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m   153 │   │   │   os.remove(fp.name)                                                             [31m│
+[31m│[39m   154 │   │   │   [94mreturn[39m retvalue                                                                [31m│
+[31m│[39m   155 │   │   [94melse[39m:                                                                              [31m│
+[31m│[39m [31m❱ [39m156 │   │   │   [94mreturn[39m [96mself[39m.profiler.export_chrome_trace(path)                                 [31m│
+[31m│[39m   157 │                                                                                          [31m│
+[31m│[39m   158 │   [94mdef[39m [92mexport_stacks[39m([96mself[39m, path: [96mstr[39m, metric: [96mstr[39m = [33m"self_cpu_time_total"[39m):               [31m│
+[31m│[39m   159 │   │   [33m"""Save stack traces in a file in a format suitable for visualization.[39m             [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m [33mC:\Users\SHIVA [39m                                                                                  [31m│
+[31m│[39m [33mSINGH\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\autograd\profiler.py[39m:[94m279[39m   [31m│
+[31m│[39m in [92mexport_chrome_trace[39m                                                                           [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m   276 │   table.[91m__doc__[39m = EventList.table.[91m__doc__[39m                                                [31m│
+[31m│[39m   277 │                                                                                          [31m│
+[31m│[39m   278 │   [94mdef[39m [92mexport_chrome_trace[39m([96mself[39m, path):                                                   [31m│
+[31m│[39m [31m❱ [39m279 │   │   [96mself[39m._check_finish()                                                               [31m│
+[31m│[39m   280 │   │   [94mif[39m kineto_available():                                                             [31m│
+[31m│[39m   281 │   │   │   [96mself[39m.kineto_results.save(path)  # type: ignore[union-attr]                     [31m│
+[31m│[39m   282 │   │   [94melse[39m:                                                                              [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m [33mC:\Users\SHIVA [39m                                                                                  [31m│
+[31m│[39m [33mSINGH\AppData\Local\Programs\Python\Python310\lib\site-packages\torch\autograd\profiler.py[39m:[94m253[39m   [31m│
+[31m│[39m in [92m_check_finish[39m                                                                                 [31m│
+[31m│[39m                                                                                                  [31m│
+[31m│[39m   250 │                                                                                          [31m│
+[31m│[39m   251 │   [94mdef[39m [92m_check_finish[39m([96mself[39m):                                                               [31m│
+[31m│[39m   252 │   │   [94mif[39m [96mself[39m.function_events [95mis[39m [94mNone[39m:                                                   [31m│
+[31m│[39m [31m❱ [39m253 │   │   │   [94mraise[39m [96mRuntimeError[39m([33m"Profiler didn't finish running"[39m)                           [31m│
+[31m│[39m   254 │                                                                                          [31m│
+[31m│[39m   255 │   [94mdef[39m [92mtable[39m(                                                                             [31m│
+[31m│[39m   256 │   │   │   [96mself[39m,                                                                          [31m│
+[31m╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+[1mRuntimeError: [22mProfiler didn't finish running

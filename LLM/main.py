@@ -544,13 +544,16 @@ class Trainer:
       for batch_idx, batch in enumerate(self.dm.train_dataloader()):
         is_accumulating = batch_idx < self.config.gradient_accumulation_steps 
         with self.fabric.no_backward_sync(self.model,enabled=(is_accumulating)):
-          loss = self.model.training_step(batch, batch_idx)
-          self.wandblog(iter=iter_num,loss=loss)
-          self.fabric.backward(loss)
-        
-        if not is_accumulating:
-          self.optimizer.step()
-          self.optimizer.zero_grad()
+          with profile(activities=[ProfilerActivity.CPU, ProfilerActivity.CUDA]) as prof:
+            loss = self.model.training_step(batch, batch_idx)
+            prof.export_chrome_trace("trace.json")
+            self.wandblog(iter=iter_num,loss=loss)
+            print(f"iter_num:{iter_num} accumulating_iter:{batch_idx} loss:{loss}")
+            self.fabric.backward(loss)
+          
+          if not is_accumulating:
+            self.optimizer.step()
+            self.optimizer.zero_grad()
       
 
       t1 = time.time()
@@ -601,6 +604,9 @@ class Trainer:
   
 
 
+from lightning.pytorch.profilers import PyTorchProfiler
+
+profiler = PyTorchProfiler()
 
 # %%
 t = Trainer(config, model, DataModule)

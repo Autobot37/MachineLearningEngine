@@ -55,7 +55,7 @@ class Config(dict):
   def __init__(self,config):
     self.__dict__.update(config)
     
-
+from dataclasses import dataclass
 @dataclass
 class ModelConfig:
   scale:int=6
