@@ -25,7 +25,8 @@ consists of Custom trainer with grad accumulation distributed data parallelism l
 as above hf model can also be trained with accelerator and peft.
 
 ## Profiler
-not being done currently .
+chrome tracing.
+
 
 
 
